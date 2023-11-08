@@ -3,7 +3,7 @@
 
 #include <iostream>
 using namespace std;
-int wyszukiwanie = (int l, int p, int szukana);
+int wyszukiwanie = int l, int p, int szukana;
 int main() {
 	int szukana = 29;
 	int l = 0;
@@ -25,6 +25,6 @@ int wyszukiwanie = (int l, int p, int szukana){
 			l = sr + 1;
 		}
 	}
-	sr ←(l + p) / 2;
+	sr = (l + p) / 2;
 	return -1;
 }
