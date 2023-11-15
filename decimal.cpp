@@ -8,7 +8,7 @@ int main()
 	cin>>liczba;
 	int i = 0;
 	int tab[31];
-	while(liczba){
+	while(liczba<0<liczba){
 		tab[i++] = liczba%2;
 		liczba = liczba/2;
 	}
