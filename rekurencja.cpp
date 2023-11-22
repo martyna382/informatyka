@@ -1,12 +1,16 @@
 #include <iostream>
 using namespace std;
-int main(){
-	int n;
-	int silnia = 1;
-	cout << "Podaj n: ";
-	cin >> n;
-	for(int i = n; i > 1; i--){
-		silnia = silnia*i;
+	long long silnia(int n){
+	if(n<2)
+		return 1;
+		
+		return n*silnia(n-1);
 	}
-	cout<<n<<"! = "<< silnia;
+int main()
+{
+	int n;
+	cout<<"Podaj liczbe: ";
+	cin>>n;
+	cout<<n<<"! = "<<silnia(n)<<endl;
+	return 0;
 }
